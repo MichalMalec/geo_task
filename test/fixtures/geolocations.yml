@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ip: MyString
+  url: MyString
+  country: MyString
+  region: MyString
+  city: MyString
+  latitude: 1.5
+  longitude: 1.5
+
+two:
+  ip: MyString
+  url: MyString
+  country: MyString
+  region: MyString
+  city: MyString
+  latitude: 1.5
+  longitude: 1.5
