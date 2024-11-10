@@ -1,4 +1,3 @@
-# app/services/ipstack_service.rb
 require 'httparty'
 
 class IpstackService
