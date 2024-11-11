@@ -105,7 +105,7 @@ RSpec.describe GeolocationsController, type: :controller do
 
         expect(response).to have_http_status(:not_found)
         json_response = JSON.parse(response.body)
-        expect(json_response['error']).to eq("Geolocation not found: Couldn't find Geolocation with 'id'=nonexistent_id")
+        expect(json_response['error']).to eq("Geolocation not found")
       end
     end
   end
@@ -129,7 +129,7 @@ RSpec.describe GeolocationsController, type: :controller do
 
       expect(response).to have_http_status(:not_found)
       json_response = JSON.parse(response.body)
-      expect(json_response['error']).to eq("Geolocation not found: Couldn't find Geolocation with 'id'=nonexistent_id")
+      expect(json_response['error']).to eq("Geolocation not found")
     end
   end
 
@@ -147,7 +147,4 @@ RSpec.describe GeolocationsController, type: :controller do
     end
   end
 end
-
-
-
 end

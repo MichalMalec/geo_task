@@ -1,15 +1,15 @@
-require 'httparty'
+require "httparty"
 
 class IpstackService
   BASE_URL = "http://api.ipstack.com"
-  ACCESS_KEY = ENV['IPSTACK_API_KEY']
+  ACCESS_KEY = ENV["IPSTACK_API_KEY"]
 
   def self.get_geolocation(ip_or_url)
     begin
       response = HTTParty.get("#{BASE_URL}/#{ip_or_url}?access_key=#{ACCESS_KEY}")
 
       if response.code == 200
-        return parse_json(response.body)
+        parse_json(response.body)
       else
         handle_api_error(response)
       end
