@@ -44,4 +44,8 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
 end
 
-
+group :test do
+  gem 'rspec-rails'
+  gem 'webmock'
+  gem 'factory_bot_rails'
+end
