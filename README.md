@@ -1,24 +1,25 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Run app:
+```
+docker-compose up
+```
 
-Things you may want to cover:
+Exemplary requests:
+POST:
+```
+curl -X POST -H "Content-Type: application/json" -d '{"ip": "134.201.250.155"}' http://localhost:3000/geolocations
+```
+GET:
+```
+curl http://localhost:3000/geolocations/1
+```
+DELETE:
+```
+curl -X DELETE http://localhost:3000/geolocations/1
+```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Run tests:
+```
+bundle exec rspec
+```
