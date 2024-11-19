@@ -1,5 +1,8 @@
 # README
 
+Description:
+The aim of this task is to build a simple API. The application is able to store geolocation data in the database, based on IP address or URL - https://ipstack.com/ was used to get geolocation data. The API is able to add, delete or provide geolocation data on the base of ip address or URL.
+
 Run app:
 ```
 docker-compose up
